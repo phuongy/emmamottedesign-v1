@@ -1,0 +1,86 @@
+{
+    "home": [],
+    "projects": [
+
+      {
+          "title": "airscope",
+          "subtitle": "design / strategy",
+          "slug": "airscope",
+          "hero": "/projects/airscope/airscope_cover.jpg",
+          "thumb": "/projects/airscope/airscope_thumb.jpg",
+          "summary": "<p>Airscope is data capturing and analysis company. Being a startup made it vital to create an impactful digital presence. Their new website not only showcases their depth of services and knowledge but their point of difference, through indepth case studies and industry service breakdowns.</p>",
+          "role": "<p>sole web designer, strategy</p>",
+          "gallery": [
+              ["/projects/airscope/image_1_home_menu.jpg"],
+              ["/projects/airscope/regular.jpg"],
+              ["/projects/airscope/industry_detail_2.jpg"],
+              ["/projects/airscope/case-study.jpg"],
+              ["/projects/airscope/news.jpg"]
+          ]
+      },
+
+      {
+          "title": "Environmental Consultants Association WA",
+          "subtitle": "design / strategy",
+          "slug": "eca",
+            "hero": "/projects/eca/eca_cover.jpg",
+          "thumb": "/projects/eca/eca_thumb_02.jpg",
+          "summary": "<p>The Evironmental Consultants Association of WA required a digital space where qualified environmental consultants can be easily sourced & a place where the industry can communicate amongst each other.</p>",
+          "role": "<p>sole web designer, strategy</p>",
+
+          "gallery": [
+
+              ["/projects/eca/eca_home.jpg"],
+              ["/projects/eca/find_consultant.jpg"],
+              ["/projects/eca/eca_layout_mobile.jpg"],
+              ["/projects/eca/eca_regular.jpg"]
+
+          ]
+      },
+
+      {
+          "title": "attica",
+          "subtitle": "design / strategy",
+          "slug": "attica",
+          "hero": "/projects/attica/attica_hero_02.jpg",
+        "thumb": "/projects/attica/attica_thumb.jpg",
+        "summary": "<p>Attica Tiles required a complete revamp of their digital presence. This site had to capture the personally selected products, the rich history of the company and their high quality service.</p>",
+        "role": "<p>sole web designer, strategy</p>",
+        "gallery": [
+
+            ["/projects/attica/attica_home.jpg"],
+            ["/projects/attica/attica_homepage_projects.jpg"],
+            ["/projects/attica/attica_mobile.jpg"],
+            ["/projects/attica/regular_pages.jpg"]
+
+
+
+        ]
+
+      },
+
+        {
+            "title": "Buddhist Society of WA",
+            "subtitle": "design / strategy",
+            "slug": "bswa",
+            "hero": "/projects/bswa/bswa_hero.jpg",
+            "thumb": "/projects/bswa/bswa_thumb_02.jpg",
+            "summary": "<p>The Buddhist Society of Western Australia has one of the largest buddhist followings in the southern hemisphere. Through this website they can now share their breadth of teaching resources, event and retreat information all in one place.</p>",
+            "role": "<p>sole web designer, strategy</p>",
+            "gallery": [
+
+                ["/projects/bswa/home_page_bswa.jpg"],
+                ["/projects/bswa/home_mobile_bswa.jpg"],
+                ["/projects/bswa/nav_bswa.jpg"],
+                ["/projects/bswa/teachings_bswa.jpg"],
+                ["/projects/bswa/location_bswa.jpg"],
+                ["/projects/bswa/events_bswa.jpg"]
+
+              ]
+          }
+
+
+
+
+    ]
+}

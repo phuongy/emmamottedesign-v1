@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,900" rel="stylesheet">
+  <title>Emilie</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: #ff414b;
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .not-loaded * {
+      opacity: 0;
+      transition: opacity 1s 1s;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+  </style>
+</head>
+
+<body class="not-loaded">
+  <div id="root">
+    <!--Loading...-->
+  </div>
+</body>
+
+</html>

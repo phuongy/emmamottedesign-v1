@@ -1,0 +1,155 @@
+// .route-change-enter {
+//   opacity: 0;
+// }
+
+// .route-change-leave {
+//   opacity: 0;
+// }
+@import 'Mixins';
+
+.project {
+    
+}
+
+.project .hero {
+  background-size: cover;
+  color: #fff;
+  height: 350px;
+  max-height: 900px;
+  min-height: 350px;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+
+  @media(min-width: 600px) {
+    height: 58vw;
+  }
+
+  &::before, &::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  &::before {
+    background: rgba(0,0,0,0.22);
+    height: 100%;
+    top: 0;
+    z-index: 1;
+  }
+
+  &::after {
+    border-bottom: calc( 60px + (166 - 60) * ( (100vw - 400px) / ( 1100 - 400) )) solid #fff;
+    border-left: 100vw solid transparent;
+    bottom: 0;
+    height: 0;
+    z-index: 4;
+
+    @media(min-width: 900px) {
+      border-bottom-width: 166px;
+    }
+  }
+}
+
+.project .hero .inner {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 30px 60px;
+  @include fluid-type(padding-bottom, 600px, 900px, 60px, 166px);
+  position: absolute;
+  z-index: 3;
+}
+
+.project .hero_title {
+  font-weight: 900;
+  @include fluid-type(font-size, 600px, 900px, 40px, 80px);
+  @include fluid-type(margin-bottom, 600px, 900px, 10px, 20px);
+}
+
+.project .hero_subtitle {
+  font-size: 20px;
+  font-weight: 100;
+  @include fluid-type(font-size, 600px, 900px, 21px, 31px);
+}
+
+.project .content {
+  background: #fff;
+  color: #2c2c2c;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 10px 0 90px;
+
+  h2 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 80px 0 0;
+
+    @include fluid-type(font-size, 600px, 900px, 30px, 50px);
+    @include fluid-type(margin-top, 600px, 900px, 40px, 80px);
+  }
+
+  p {
+    margin: 20px 0;
+  }
+}
+
+.gallery {
+  background: #fff;
+}
+
+.gallery .inner {
+    margin: 0 auto;
+    // max-width: none;
+    max-width: 1080px;
+    padding: 0;
+}
+
+.gallery_row {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: stretch;
+
+  @media(min-width: 700px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.gallery_item {
+  flex: 1 1 auto;
+}
+
+.gallery_item img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.footer_nav {
+  display: flex;
+
+  a {
+    color: #ff444f;
+    display: block;
+    flex: 1 1 50%;
+    font-weight: 100;
+
+    @include fluid-type(font-size, 600px, 900px, 20px, 31px);
+  }
+
+  a:first-child {
+    text-align: left;
+  }
+
+  a:last-child {
+    text-align: right;
+  }
+
+  strong {
+    font-weight: 900;
+  }
+}
