@@ -109,7 +109,7 @@ export default class Project extends Component {
                     <div className="inner">
                         <div className="footer_nav">
                             <Link to={`/project/${previousProject.slug}`}>&lt; previous project <strong>{previousProject.title}</strong></Link>
-                            <Link to={`/project/${nextProject.slug}`}>next project <strong>{nextProject.title}</strong> &gt;</Link>
+                            <Link to={`/project/${nextProject.slug}`}>next project &gt; <strong>{nextProject.title}</strong></Link>
                         </div>
                     </div>
                 </section>

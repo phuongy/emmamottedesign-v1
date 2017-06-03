@@ -29,15 +29,13 @@ export default class Home extends Component {
       if (!this.updating) {
         this.updating = true;
       
-        let scrollTop = document.querySelector('body').scrollTop;
-
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+        
         let heroHeight = this.hero.getBoundingClientRect().height;
         let content = this.content.getBoundingClientRect();
         let projectContainer = this.projects.getBoundingClientRect();
         let projects = this.projects.childNodes;
-        // let work = this.work.getBoundingClientRect();
-        // console.log(this.hero.getBoundingClientRect(), this.work.getBoundingClientRect());
-
+        
         // hero fade
         if (scrollTop > heroHeight) {
           this.hero.style.opacity = 0;
@@ -92,7 +90,7 @@ export default class Home extends Component {
         <section className="hero" ref={(div) => {this.hero = div}}>
           <div className="inner">
             <p className="line1">i'm emilie mamotte.</p>
-            <p className="line2">digital designer</p>
+            <p className="line2">senior digital designer</p>
             <p className="line3">strategist / pixel perfectionist.</p>
           </div>
         </section>

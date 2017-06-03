@@ -37,14 +37,14 @@ export default class App extends Component {
       if (!this.updating) {
         this.updating = true;
 
-        let scrollTop = document.querySelector('body').scrollTop;
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
         let mainHeight = document.querySelector('.main').getBoundingClientRect().height;
         let mainHalfHeight = mainHeight / 2;
 
         let main = this.main.getBoundingClientRect();
         let contact = document.querySelector('.contact').getBoundingClientRect();
 
-        if (contact.top < 0) {
+        if ((contact.bottom - 200) < document.documentElement.clientHeight) {
           this.setState({footerIsVisible: true});
         } else {
           this.setState({footerIsVisible: false});
@@ -149,7 +149,7 @@ export default class App extends Component {
             </p>
           </div>
         </section>
-        <section className="contact"></section>
+        <section id="contact" className="contact"></section>
       </div>
     )
   }
